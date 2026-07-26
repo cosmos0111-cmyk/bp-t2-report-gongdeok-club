@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌드 리포트 | 유흥 가격 비교 및 서울 야간 경제 동향</title>
+    <meta name="description" content="서울 주요 야간 업종(가라오케, 셔츠룸, 비즈니스룸 등)의 최근 시장 동향과 객관적인 유흥 가격 비교 분석 데이터를 제공하는 전문 트렌드 리포트 페이지입니다.">
+    <meta name="keywords" content="유흥 가격 비교, 서울 야간 업종, 가라오케 비용, 비즈니스클럽 가격, 야간 경제 트렌드">
+    <link rel="canonical" href="https://report.gongdeok-club.xyz/blog-3.html">
+    
+    <!-- BPAAS Design System Meta -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-charcoal-silver">
+
+    <!-- Open Graph & Twitter Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="트렌드 리포트 — 서울 주요 야간 업종 가격 비교 및 동향">
+    <meta property="og:description" content="시장 구조 변화와 소비 트렌드 분석을 통한 투명한 가격 정보 가이드">
+    <meta property="og:url" content="https://report.gongdeok-club.xyz/blog-3.html">
+
+    <style>
+        /* CSS Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        :root {
+            --bg-primary: #0d0d0e;
+            --bg-secondary: #161618;
+            --bg-tertiary: #1e1e21;
+            --text-primary: #f5f5f7;
+            --text-secondary: #86868b;
+            --text-tertiary: #6e6e73;
+            --accent-silver: #d2d2d7;
+            --accent-border: #2c2c2e;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --max-width: 1120px;
+            --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            letter-spacing: -0.02em;
+            overflow-x: hidden;
+        }
+
+        /* Layout Grid & Spacing */
+        .q-grid-ev29 {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Style */
+        .n-item-v9jk {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(13, 13, 14, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--accent-border);
+            transition: var(--transition-smooth);
+        }
+
+        .n-item-v9jk-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .t-item-8ro1 {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .t-item-8ro1 span {
+            font-size: 11px;
+            font-weight: 500;
+            background-color: var(--bg-tertiary);
+            color: var(--accent-silver);
+            padding: 2px 8px;
+            border-radius: 12px;
+            border: 1px solid var(--accent-border);
+        }
+
+        .r-item-7x5k-list {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .r-item-7x5k-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+
+        .r-item-7x5k-link:hover,
+        .r-item-7x5k-link.active {
+            color: var(--text-primary);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 120px 0 60px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--accent-border);
+        }
+
+        .hero-tag {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.04em;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+        }
+
+        .hero-desc {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 680px;
+            margin: 0 auto;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        /* Section Layout */
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            margin-bottom: 48px;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Trend Grid & Cards */
+        .trend-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+
+        .trend-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--accent-border);
+            border-radius: 12px;
+            padding: 32px;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .trend-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--text-secondary);
+        }
+
+        .trend-meta {
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .trend-card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .trend-card-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .trend-link {
+            font-size: 14px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: auto;
+        }
+
+        .trend-link::after {
+            content: "→";
+            transition: var(--transition-smooth);
+        }
+
+        .trend-link:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* Data Analysis Block */
+        .data-block {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--accent-border);
+            border-radius: 16px;
+            padding: 48px;
+            margin-top: 40px;
+        }
+
+        .data-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 1px solid var(--accent-border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .data-header-left h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .data-header-left p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .data-source {
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        .analysis-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .analysis-table th, 
+        .analysis-table td {
+            padding: 16px;
+            font-size: 14px;
+            border-bottom: 1px solid var(--accent-border);
+        }
+
+        .analysis-table th {
+            color: var(--text-secondary);
+            font-weight: 500;
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .analysis-table td {
+            color: var(--text-primary);
+        }
+
+        .analysis-table tr:hover td {
+            background-color: rgba(255, 255, 255, 0.01);
+        }
+
+        .badge-trend {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .badge-up {
+            background-color: rgba(255, 69, 58, 0.15);
+            color: #ff453a;
+        }
+
+        .badge-stable {
+            background-color: rgba(142, 142, 147, 0.15);
+            color: #8e8e93;
+        }
+
+        /* FAQ Section */
+        .faq-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--accent-border);
+            padding: 24px 0;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer-v8sl {
+            background-color: var(--bg-primary);
+            border-top: 1px solid var(--accent-border);
+            padding: 60px 0 40px 0;
+            color: var(--text-tertiary);
+            font-size: 12px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .footer-links h5 {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: var(--text-tertiary);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--accent-border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .trend-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+            .hero-desc {
+                font-size: 16px;
+            }
+            .trend-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .data-block {
+                padding: 24px;
+            }
+            .data-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="n-item-v9jk">
+        <div class="q-grid-ev29 n-item-v9jk-inner">
+            <a href="/" class="t-item-8ro1">
+                서울야간경제연구소 <span>Report</span>
+            </a>
+            <nav>
+                <ul class="r-item-7x5k-list">
+                    <li><a href="/" class="r-item-7x5k-link">홈</a></li>
+                    <li><a href="/guide" class="r-item-7x5k-link">이용 가이드</a></li>
+                    <li><a href="/trend" class="r-item-7x5k-link active">트렌드</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="q-grid-ev29">
+            <span class="hero-tag">Market Intelligence & Trends</span>
+            <h1 class="hero-title">서울 야간 업종<br>소비 구조 및 가격 트렌드</h1>
+            <p class="hero-desc">
+                정보의 비대칭성을 해소하고 투명한 야간 경제 생태계를 지향합니다. 데이터 기반의 시장 동향 및 구조 분석 리포트를 제공합니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content Section 1: Trend Articles -->
+    <section class="section-padding">
+        <div class="q-grid-ev29">
+            <div class="section-header">
+                <p class="section-subtitle">Industry Insights</p>
+                <h2 class="section-title">주요 시장 변화 동향</h2>
+            </div>
+
+            <div class="trend-grid">
+                <!-- Card 1 -->
+                <div class="trend-card">
+                    <div>
+                        <div class="trend-meta">
+                            <span>시장 동향</span>
+                            <span>2024.11</span>
+                        </div>
+                        <h3 class="trend-card-title">정찰제 도입 확산과 정액 요금제 트렌드</h3>
+                        <p class="trend-card-desc">
+                            불투명한 추가 청구를 방지하기 위해 강남권을 중심으로 기본 세트 구성에 정액 요금을 사전 고지하는 업태가 증가하고 있습니다.
+                        </p>
+                    </div>
+                    <a href="/guide" class="trend-link">보고서 확인</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="trend-card">
+                    <div>
+                        <div class="trend-meta">
+                            <span>원가 분석</span>
+                            <span>2024.11</span>
+                        </div>
+                        <h3 class="trend-card-title">주류 유통비 및 인건비 연동 추이</h3>
+                        <p class="trend-card-desc">
+                            최근 위스키 및 국내 주류 유통 비용의 상승과 전문 보조 인력의 시급 변동이 전체 테이블 단가에 미치는 영향을 데이터로 짚어봅니다.
+                        </p>
+                    </div>
+                    <a href="/guide" class="trend-link">보고서 확인</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="trend-card">
+                    <div>
+                        <div class="trend-meta">
+                            <span>지역 격차</span>
+                            <span>2024.11</span>
+                        </div>
+                        <h3 class="trend-card-title">강남·마포·용산 권역별 비용 격차 요인</h3>
+                        <p class="trend-card-desc">
+                            부동산 임대료와 주요 타깃 소비층의 성향에 따라 형성된 권역별 고정비 편차 및 세부 단가 차이를 심층 비교 분석합니다.
+                        </p>
+                    </div>
+                    <a href="/guide" class="trend-link">보고서 확인</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section 2: Data Analysis Table -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--accent-border); border-bottom: 1px solid var(--accent-border);">
+        <div class="q-grid-ev29">
+            <div class="section-header">
+                <p class="section-subtitle">Data Visualization</p>
+                <h2 class="section-title">업종별 표준 비용 구조 분석</h2>
+            </div>
+
+            <div class="data-block">
+                <div class="data-header">
+                    <div class="data-header-left">
+                        <h3>서울 주요 야간 업종 비용 구성 항목</h3>
+                        <p>시장 평균치를 기준으로 분석한 세부 항목별 비중 분석표</p>
+                    </div>
+                    <div class="data-source">출처: 자체 시장 조사 데이터 (2024년 4분기 기준)</div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="analysis-table">
+                        <thead>
+                            <tr>
+                                <th>업종 구분</th>
+                                <th>기본 주류 및 안주 비율</th>
+                                <th>시간당 룸 이용료</th>
+                                <th>인적 서비스 구성비</th>
+                                <th>최근 6개월 변동 추이</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>가라오케 (Karaoke)</strong></td>
+                                <td>약 45%</td>
+                                <td>정액제 (시간당 책정)</td>
+                                <td>선택적 추가 구성</td>
+                                <td><span class="badge-trend badge-stable">보합세</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>셔츠룸 (Shirts Room)</strong></td>
+                                <td>약 30%</td>
+                                <td>패키지 기본 포함</td>
+                                <td>정액제 운영 비율 높음</td>
+                                <td><span class="badge-trend badge-up">소폭 상승</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>비즈니스 클럽 (Business Club)</strong></td>
+                                <td>약 50%</td>
+                                <td>고정 룸 차지 적용</td>
+                                <td>시간 단위 정산제</td>
+                                <td><span class="badge-trend badge-stable">보합세</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>멤버십 가라오케</strong></td>
+                                <td>약 60%</td>
+                                <td>고가 정액제</td>
+                                <td>개별 전담 마크제</td>
+                                <td><span class="badge-trend badge-up">상승세</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section 3: FAQ -->
+    <section class="section-padding">
+        <div class="q-grid-ev29">
+            <div class="section-header" style="text-align: center;">
+                <p class="section-subtitle">Frequently Asked Questions</p>
+                <h2 class="section-title">자주 묻는 질문</h2>
+            </div>
+
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <h3 class="faq-question">야간 업종별로 가격 차이가 발생하는 주된 원인은 무엇인가요?</h3>
+                    <p class="faq-answer">
+                        주요 요인은 제공되는 인적 서비스의 형태, 기본 주류의 등급, 그리고 공간의 독점성(룸 크기 및 설비 사양)입니다. 정찰제 패키지를 운영하는 곳은 시간당 고정 비용이 명확한 반면, 멤버십 형태는 고정비보다 선택 항목에 따른 변동 폭이 큽니다.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">유흥 가격 비교 시 소비자가 가장 주의해야 할 숨겨진 비용은?</h3>
+                    <p class="faq-answer">
+                        기본 세트 요금 외에 발생하는 '룸 차지(공간 이용료)', '봉사료(VAT 세금 제외 여부)', 그리고 '시간 연장 시 추가되는 비용'을 사전에 명확히 확인해야 합니다. 사후 청구 방식으로 오해가 생기는 경우가 많으므로 사전 정찰 확인이 중요합니다.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">권역별(강남 vs 강북) 가격 편차는 어느 정도인가요?</h3>
+                    <p class="faq-answer">
+                        동일 업종 기준 강남 권역이 강북 및 외곽 권역 대비 평균 15%~25% 가량 높게 책정되는 경향이 있습니다. 이는 강남 지역의 높은 보증금 및 임대료 수준과 하이엔드 서비스를 지향하는 업소 집중 현상에 기인합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-v8sl">
+        <div class="q-grid-ev29">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>서울야간경제연구소</h4>
+                    <p>본 사이트는 서울 지역 야간 경제의 투명성 제고와 불합리한 정보 격차 해소를 위해 객관적인 업종별 비용 구조 데이터 및 트렌드 리포트를 제공하는 전문 블로그입니다.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>주요 메뉴</h5>
+                    <ul>
+                        <li><a href="/">홈</a></li>
+                        <li><a href="/guide">이용 가이드</a></li>
+                        <li><a href="/trend">트렌드 분석</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>관련 정보</h5>
+                    <ul>
+                        <li><a href="/guide">비용 산정 기준</a></li>
+                        <li><a href="/trend">시장 동향 보고서</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 서울야간경제연구소. All Rights Reserved. 본 정보는 시장 분석 목적의 객관적 데이터 가이드라인입니다.</p>
+                <p>Designed with Precision.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

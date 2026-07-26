@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유흥 가격 비교 — 서울 주요 업종별 객관적 비용 분석 보고서</title>
+    <meta name="description" content="서울 지역의 다양한 야간 경제 업종(셔츠룸, 룸싸롱, 가라오케 등)의 가격 형성 구조와 객관적인 비교 데이터를 제공하는 전문 분석 리포트 블로그입니다.">
+    <meta name="keywords" content="유흥 가격 비교, 서울 야간 업종, 가라오케 비용, 비즈니스클럽 가격">
+    <link rel="canonical" href="https://report.gongdeok-club.xyz/">
+    
+    <!-- BPAAS Design System Meta -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-charcoal-silver">
+
+    <!-- Open Graph & Twitter Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 가격 비교 — 서울 주요 업종별 객관적 비용 분석 보고서">
+    <meta property="og:description" content="서울 주요 야간 업종의 가격 데이터를 투명하게 비교 분석하여 합리적인 선택을 돕는 에디토리얼 가이드입니다.">
+    <meta property="og:url" content="https://report.gongdeok-club.xyz/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="유흥 가격 비교 — 서울 주요 업종별 객관적 비용 분석 보고서">
+    <meta name="twitter:description" content="서울 주요 야간 업종의 가격 데이터를 투명하게 비교 분석하여 합리적인 선택을 돕는 에디토리얼 가이드입니다.">
+
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 0 !important; /* No rounded corners allowed */
+        }
+
+        :root {
+            --color-primary: #16161a; /* Dark Charcoal */
+            --color-secondary: #f4f4f6; /* Off-white/Silver */
+            --color-accent: #8a8aaa; /* Muted Silver Grey */
+            --color-gold: #c5a880; /* Muted Gold/Brass */
+            --color-text-dark: #222222;
+            --color-text-light: #ededed;
+            --font-display: 'Playfair Display', 'Cormorant Garamond', serif;
+            --font-body: 'Noto Serif KR', serif;
+        }
+
+        body {
+            background-color: var(--color-secondary);
+            color: var(--color-text-dark);
+            font-family: var(--font-body);
+            line-height: 1.7;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Base Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        /* Layout Grid & Spacing */
+        .q-grid-ev29 {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Style */
+        .n-item-v9jk {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            border-bottom: 3px double var(--color-gold);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 16px 0;
+        }
+
+        .n-item-v9jk-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .t-item-8ro1 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--color-gold);
+            padding-bottom: 2px;
+        }
+
+        .r-item-7x5k-list {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .r-item-7x5k-link {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        .r-item-7x5k-link:hover {
+            color: var(--color-gold);
+        }
+
+        /* Mobile Menu Button */
+        .k-grid-yogv-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section (Black Book Concierge Concept) */
+        .k-side-40js {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 96px 0;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--color-gold);
+        }
+
+        /* Grid Pattern Pseudo-element */
+        .k-side-40js::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(rgba(197, 168, 128, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+            pointer-events: none;
+        }
+
+        .k-side-40js-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .k-side-40js-meta {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--color-gold);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .k-side-40js-title {
+            font-size: 3rem;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .k-side-40js-title em {
+            font-family: var(--font-display);
+            font-style: italic;
+            color: var(--color-gold);
+        }
+
+        .k-side-40js-desc {
+            font-size: 1.05rem;
+            color: var(--color-accent);
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        /* Handcrafted Indie Signature: Tilted Stamp */
+        .k-btn-1agu {
+            border: 1px dashed var(--color-gold);
+            outline: 1px solid var(--color-gold);
+            outline-offset: 4px;
+            padding: 24px;
+            background-color: rgba(22, 22, 26, 0.95);
+            transform: rotate(-2.5deg); /* Intentionally tilted */
+            transition: transform 0.3s ease;
+            box-shadow: none; /* No box shadow on dark bg */
+        }
+
+        .k-btn-1agu:hover {
+            transform: rotate(-1deg);
+        }
+
+        .k-btn-1agu-title {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--color-gold);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .k-btn-1agu-text {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+
+        /* Search Section */
+        .r-body-w58l-sec {
+            background-color: #ededf0;
+            padding: 32px 0;
+            border-bottom: 1px solid #d1d1d6;
+        }
+
+        .r-body-w58l-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .r-body-w58l-box {
+            position: relative;
+            flex-grow: 1;
+            max-width: 500px;
+        }
+
+        .r-body-w58l-input {
+            width: 100%;
+            padding: 12px 16px;
+            background-color: var(--color-secondary);
+            border: 1px solid #c5a880;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            color: var(--color-text-dark);
+            outline: none;
+        }
+
+        .r-body-w58l-input:focus {
+            border-color: var(--color-primary);
+        }
+
+        .n-nav-mkrc {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .q-top-tah2-btn {
+            background: none;
+            border: 1px solid #c5a880;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-body);
+        }
+
+        .q-top-tah2-btn:hover, .q-top-tah2-btn.active {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            border-color: var(--color-primary);
+        }
+
+        /* Section Global Settings */
+        .m-img-y3x3 {
+            padding: 96px 0;
+            border-bottom: 1px solid #e1e1e6;
+        }
+
+        .m-img-y3x3:nth-child(even) {
+            background-color: #fcfcfd;
+        }
+
+        .q-ico-fkti-label {
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--color-gold);
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .q-ico-fkti-title {
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: var(--color-primary);
+            border-bottom: 1px solid #e1e1e6;
+            padding-bottom: 16px;
+        }
+
+        /* Table Style (Price Comparison) */
+        .q-nav-9lgu-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 24px;
+            border: 3px double var(--color-gold);
+            padding: 4px;
+            background-color: var(--color-secondary);
+        }
+
+        .q-nav-9lgu {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .q-nav-9lgu th {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            font-family: var(--font-body);
+            font-weight: 600;
+            padding: 16px;
+            border: 1px solid #33333d;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .q-nav-9lgu td {
+            padding: 16px;
+            border: 1px solid #d1d1d6;
+            color: var(--color-text-dark);
+            background-color: #ffffff;
+        }
+
+        .q-nav-9lgu tr:nth-child(even) td {
+            background-color: #f9f9fb;
+        }
+
+        .q-nav-9lgu-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background-color: #eaeaea;
+            color: #555555;
+            border: 1px solid #ccc;
+        }
+
+        .q-nav-9lgu-badge.premium {
+            background-color: #f7f0e5;
+            color: #8c6d3b;
+            border-color: #e2d1b8;
+        }
+
+        /* Cards Layout (Selection Criteria) */
+        .r-ico-wbc5-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .m-list-nzkk {
+            background-color: #ffffff;
+            border: 1px solid #d1d1d6;
+            padding: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .m-list-nzkk-inner {
+            border: 1px solid #e1e1e6;
+            padding: 24px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .m-list-nzkk:hover {
+            border-color: var(--color-gold);
+        }
+
+        .m-list-nzkk-num {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--color-gold);
+            font-style: italic;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .m-list-nzkk-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--color-primary);
+        }
+
+        .m-list-nzkk-text {
+            font-size: 0.88rem;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        /* Latest Blog Posts Layout (Editorial / Text-focused) */
+        .q-txt-y12v-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .m-top-hcr0-item {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 32px;
+            align-items: flex-start;
+            border-bottom: 1px dashed #d1d1d6;
+            padding-bottom: 40px;
+        }
+
+        .m-top-hcr0-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .m-top-hcr0-meta {
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            color: var(--color-gold);
+        }
+
+        .m-top-hcr0-meta span {
+            display: block;
+            margin-bottom: 4px;
+            color: #888888;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+        }
+
+        .m-top-hcr0-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: var(--color-primary);
+        }
+
+        .m-top-hcr0-title a:hover {
+            color: var(--color-gold);
+        }
+
+        /* Drop cap styling */
+        .r-top-ypzd::first-letter {
+            font-family: var(--font-display);
+            font-size: 3.2rem;
+            float: left;
+            margin-right: 10px;
+            line-height: 0.9;
+            color: var(--color-gold);
+            font-weight: 700;
+        }
+
+        .m-top-hcr0-excerpt {
+            font-size: 0.92rem;
+            color: #555555;
+            line-height: 1.7;
+        }
+
+        /* FAQ Styling */
+        .n-foot-kg84-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .n-foot-kg84-item {
+            border: 1px solid #d1d1d6;
+            background-color: #ffffff;
+            padding: 24px;
+        }
+
+        .n-foot-kg84-q {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .n-foot-kg84-q::before {
+            content: "Q.";
+            font-family: var(--font-display);
+            color: var(--color-gold);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .n-foot-kg84-a {
+            font-size: 0.9rem;
+            color: #555555;
+            line-height: 1.7;
+            padding-left: 24px;
+            border-left: 2px solid var(--color-gold);
+        }
+
+        /* Author Profile Block (E-A-T) */
+        .q-nav-lvsm-section {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 64px 0;
+            border-top: 3px double var(--color-gold);
+            border-bottom: 1px solid #2c2c35;
+        }
+
+        .q-nav-lvsm-card {
+            border: 1px solid rgba(197, 168, 128, 0.3);
+            padding: 32px;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .q-nav-lvsm-card::before {
+            content: "EDITOR PROFILE";
+            position: absolute;
+            top: -10px;
+            left: 24px;
+            background-color: var(--color-primary);
+            padding: 0 12px;
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            color: var(--color-gold);
+        }
+
+        .q-nav-lvsm-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .q-nav-lvsm-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-gold);
+        }
+
+        .q-nav-lvsm-title {
+            font-size: 0.8rem;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .q-nav-lvsm-text {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        /* Footer Style */
+        .v-list-fk3u {
+            background-color: #0f0f12;
+            color: #777788;
+            padding: 48px 0;
+            font-size: 0.8rem;
+            border-top: 1px solid #1a1a22;
+        }
+
+        .v-list-fk3u-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .v-list-fk3u-copy {
+            font-family: var(--font-display);
+            letter-spacing: 0.05em;
+        }
+
+        .v-list-fk3u-disclaimer {
+            max-width: 600px;
+            line-height: 1.6;
+            color: #555566;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .n-item-v9jk-inner {
+                position: relative;
+            }
+
+            .k-grid-yogv-toggle {
+                display: block;
+            }
+
+            .r-item-7x5k {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--color-primary);
+                border-top: 1px solid var(--color-gold);
+                padding: 16px 24px;
+            }
+
+            .r-item-7x5k.active {
+                display: block;
+            }
+
+            .r-item-7x5k-list {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .k-side-40js-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .k-side-40js-title {
+                font-size: 2.2rem;
+            }
+
+            .k-btn-1agu {
+                transform: none !important;
+                margin-top: 16px;
+            }
+
+            .r-ico-wbc5-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .m-top-hcr0-item {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .q-ico-fkti-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data (FAQ & Blog) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Blog",
+          "@id": "https://report.gongdeok-club.xyz/#blog",
+          "name": "유흥 가격 비교 리포트",
+          "url": "https://report.gongdeok-club.xyz/",
+          "description": "서울 지역 야간 경제 업종의 객관적 비용 분석 및 구조 비교 정보를 제공합니다.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "유흥 가격 비교 리포트"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://report.gongdeok-club.xyz/#author",
+          "name": "민병우",
+          "jobTitle": "시장 트렌드 분석가",
+          "description": "서울 지역 야간 비즈니스 트렌드와 객관적 비용 데이터를 4년간 연구 및 기록해 온 전문 분석가입니다."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://report.gongdeok-club.xyz/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "서울 지역에서 업종별 가격 차이가 발생하는 가장 큰 요인은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "가장 결정적인 요인은 제공되는 물리적 공간의 임대료 수준, 주류 구성 및 전문 인력 배치 구조입니다. 멤버십 기반 독점 업종일수록 고정 비용 배분이 커져 단가가 상승하며, 대중형 가라오케나 노래방은 테이블 회전율이 높아 상대적으로 단가가 낮게 형성됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "시간대별(주중/주말) 할증 제도가 실제로 보편화되어 있습니까?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "일부 캐주얼 펍이나 노래방을 제외하고, 정규 비즈니스 클럽이나 셔츠룸 등의 업종에서는 요일별 공식 할증보다는 주말 전후의 대기 시간 차이 및 특정 주류 세트 강제 구성 여부에 따라 실질 비용 편차가 발생할 수 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "예산을 초과하지 않기 위해 방문 전 필수적으로 확인해야 할 사항은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "기본 주류 세트 비용 외에 시간당 청구되는 서비스 비용(T/C) 및 룸 이용 자체에 붙는 룸차지가 별도로 존재하는지 확인해야 합니다. 또한 세금 및 봉사료가 최종 합산 금액에 포함되어 있는지 사전 고지 내용을 대조하는 것이 안전합니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="n-item-v9jk">
+        <div class="q-grid-ev29 n-item-v9jk-inner">
+            <a href="/" class="t-item-8ro1">유흥 가격 비교 REPORT</a>
+            <button class="k-grid-yogv-toggle" id="menuToggle" aria-label="메뉴 열기">☰</button>
+            <nav class="r-item-7x5k" id="mainNav">
+                <ul class="r-item-7x5k-list">
+                    <li><a href="#" class="r-item-7x5k-link">Home</a></li>
+                    <li><a href="#comparison" class="r-item-7x5k-link">가격 비교표</a></li>
+                    <li><a href="#criteria" class="r-item-7x5k-link">선택 가이드</a></li>
+                    <li><a href="#reports" class="r-item-7x5k-link">최신 리포트</a></li>
+                    <li><a href="#faq" class="r-item-7x5k-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="k-side-40js">
+        <div class="q-grid-ev29 k-side-40js-grid">
+            <div>
+                <span class="k-side-40js-meta">Seoul Night Economy Editorial</span>
+                <h1 class="k-side-40js-title">
+                    서울 야간 업종별<br>
+                    <em>객관적 비용 구조</em> 분석
+                </h1>
+                <p class="k-side-40js-desc">
+                    특정 업소의 이익을 대변하지 않습니다. 본 리포트는 서울 주요 지역의 다양한 야간 문화 업종(셔츠룸, 룸싸롱, 쩜오, 가라오케 등)의 비용 체계와 선택 기준을 계량화하여 제공하는 공정 분석 정보 플랫폼입니다.
+                </p>
+            </div>
+            <!-- Handcrafted Stamp Block -->
+            <div class="k-btn-1agu">
+                <span class="k-btn-1agu-title">Analyst Certified</span>
+                <p class="k-btn-1agu-text">
+                    "본 블로그의 모든 데이터는 서울 주요 권역의 평균 거래 단가를 기준으로 정량화하여 산출된 독립적 지표입니다."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Bar -->
+    <div class="r-body-w58l-sec">
+        <div class="q-grid-ev29 r-body-w58l-inner">
+            <div class="r-body-w58l-box">
+                <input type="text" class="r-body-w58l-input" placeholder="업종 또는 지역 키워드를 입력하세요...">
+            </div>
+            <div class="n-nav-mkrc">
+                <button class="q-top-tah2-btn active">전체보기</button>
+                <button class="q-top-tah2-btn">프리미엄 룸</button>
+                <button class="q-top-tah2-btn">대중형 룸</button>
+                <button class="q-top-tah2-btn">가라오케/펍</button>
+                <button class="q-top-tah2-btn">케어/마사지</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="q-grid-ev29">
+
+        <!-- SECTION 1: Comparative Table -->
+        <section id="comparison" class="m-img-y3x3">
+            <span class="q-ico-fkti-label">DATA ANALYSIS</span>
+            <h2 class="q-ico-fkti-title">업종별 가격대 및 핵심 특징 비교</h2>
+            
+            <div class="q-nav-9lgu-container">
+                <table class="q-nav-9lgu">
+                    <thead>
+                        <tr>
+                            <th>업종 대분류</th>
+                            <th>해당 업종 예시</th>
+                            <th>평균 예산 범위 (세트 기준)</th>
+                            <th>추가 비용 구조 (T/C 등)</th>
+                            <th>공간적 성격 / 주요 권역</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>하이엔드 멤버십</strong></td>
+                            <td><span class="q-nav-9lgu-badge premium">텐프로</span> <span class="q-nav-9lgu-badge premium">쩜오</span> <span class="q-nav-9lgu-badge premium">텐카페</span></td>
+                            <td>최상위 (고정가 없음)</td>
+                            <td>시간 단위 연장 및 고급 주류 선택 필수</td>
+                            <td>폐쇄적 회원제 / 강남구 청담·신사 중심</td>
+                        </tr>
+                        <tr>
+                            <td><strong>비즈니스 룸</strong></td>
+                            <td><span class="q-nav-9lgu-badge">룸싸롱</span> <span class="q-nav-9lgu-badge">비즈니스클럽</span></td>
+                            <td>중상위 ~ 상위</td>
+                            <td>묶음 요금제 혹은 시간당 정산 선택형</td>
+                            <td>정통 비즈니스 접대 위주 / 마포·서초·강남</td>
+                        </tr>
+                        <tr>
+                            <td><strong>대중형 캐주얼 룸</strong></td>
+                            <td><span class="q-nav-9lgu-badge">셔츠룸</span> <span class="q-nav-9lgu-badge">하이퍼블릭</span> <span class="q-nav-9lgu-badge">풀싸롱</span></td>
+                            <td>중위 표준형</td>
+                            <td>정찰제 테이블 비용 + 개인 시간 수수료</td>
+                            <td>직장인 친목 및 모임 / 영등포·강남·신림</td>
+                        </tr>
+                        <tr>
+                            <td><strong>엔터테인먼트</strong></td>
+                            <td><span class="q-nav-9lgu-badge">가라오케</span> <span class="q-nav-9lgu-badge">노래방</span> <span class="q-nav-9lgu-badge">펍 (Pub)</span></td>
+                            <td>실속형 ~ 중위</td>
+                            <td>룸 대여료 별도 혹은 주류 단품 선택 가능</td>
+                            <td>개방적 이벤트 공간 / 마포 홍대·용산 이태원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>테라피 & 케어</strong></td>
+                            <td><span class="q-nav-9lgu-badge">마사지</span></td>
+                            <td>시간제 정찰제</td>
+                            <td>코스별 단일 요금 (추가 수수료 없음)</td>
+                            <td>1인 휴식 위주 / 서울 전역 역세권</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.85rem; color: #777; font-style: italic;">* 위 수치는 서울 시내 주요 상권의 평균치를 기반으로 작성되었으며, 요일별/업소별 세부 조건에 따라 차이가 있을 수 있습니다.</p>
+        </section>
+
+        <!-- SECTION 2: Selection Criteria (Grid Cards) -->
+        <section id="criteria" class="m-img-y3x3">
+            <span class="q-ico-fkti-label">DECISION GUIDE</span>
+            <h2 class="q-ico-fkti-title">목적에 최적화된 조건별 선택 가이드</h2>
+            
+            <div class="r-ico-wbc5-3">
+                <!-- Card I -->
+                <div class="m-list-nzkk">
+                    <div class="m-list-nzkk-inner">
+                        <div>
+                            <span class="m-list-nzkk-num">I. Business Meeting</span>
+                            <h3 class="m-list-nzkk-title">격식 있는 비즈
+</body>
+</html>
