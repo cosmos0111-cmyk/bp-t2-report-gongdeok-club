@@ -1,593 +1,589 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>유흥 가격 비교 분석 — 서울 주요 업종별 객관적 비용 가이드</title>
-    <meta name="description" content="서울 지역의 다양한 야간 경제 업종(셔츠룸, 룸싸롱, 가라오케 등)의 가격 형성 구조와 객관적인 비교 데이터를 제공하는 전문 분석 리포트 블로그입니다.">
-    <meta name="keywords" content="유흥 가격 비교, 서울 야간 업종, 가라오케 비용, 비즈니스클럽 가격">
-    <link rel="canonical" href="https://report.gongdeok-club.xyz/blog-2.html">
-    
-    <!-- BPAAS Design System Meta -->
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-charcoal-silver">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>유흥 가격 비교 분석 — 서울 주요 업종별 객관적 비용 가이드</title>
+ <meta name="description" content="서울 지역의 다양한 야간 경제 업종(셔츠룸, 룸싸롱, 가라오케 등)의 가격 형성 구조와 객관적인 비교 데이터를 제공하는 전문 분석 리포트 블로그입니다.">
+ <meta name="keywords" content="유흥 가격 비교, 서울 야간 업종, 가라오케 비용, 비즈니스클럽 가격">
+ <link rel="canonical" href="https://report.gongdeok-club.xyz/blog-2.html">
+ 
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="유흥 가격 비교 분석 — 서울 주요 업종별 객관적 비용 가이드">
+ <meta property="og:description" content="서울 지역의 다양한 야간 경제 업종(셔츠룸, 룸싸롱, 가라오케 등)의 가격 형성 구조와 객관적인 비교 데이터를 제공하는 전문 분석 리포트 블로그입니다.">
+ <meta property="og:url" content="https://report.gongdeok-club.xyz/blog-2.html">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="유흥 가격 비교 분석 — 서울 주요 업종별 객관적 비용 가이드">
-    <meta property="og:description" content="서울 지역의 다양한 야간 경제 업종(셔츠룸, 룸싸롱, 가라오케 등)의 가격 형성 구조와 객관적인 비교 데이터를 제공하는 전문 분석 리포트 블로그입니다.">
-    <meta property="og:url" content="https://report.gongdeok-club.xyz/blog-2.html">
+ <style>
+ /* CSS Reset & Variables */
+ :root {
+ --bg-primary: #0a0a0c;
+ --bg-secondary: #121215;
+ --bg-tertiary: #1c1c21;
+ --text-primary: #f5f5f7;
+ --text-secondary: #a1a1a6;
+ --text-muted: #6e6e73;
+ --accent: #e5e5ea;
+ --border-color: rgba(255, 255, 255, 0.08);
+ --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ --max-width: 1100px;
+ --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+ }
 
-    <style>
-        /* CSS Reset & Variables */
-        :root {
-            --bg-primary: #0a0a0c;
-            --bg-secondary: #121215;
-            --bg-tertiary: #1c1c21;
-            --text-primary: #f5f5f7;
-            --text-secondary: #a1a1a6;
-            --text-muted: #6e6e73;
-            --accent: #e5e5ea;
-            --border-color: rgba(255, 255, 255, 0.08);
-            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            --max-width: 1100px;
-            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+ body {
+ background-color: var(--bg-primary);
+ color: var(--text-primary);
+ font-family: var(--font-sans);
+ line-height: 1.625;
+ letter-spacing: -0.022em;
+ -webkit-font-smoothing: antialiased;
+ }
 
-        body {
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            font-family: var(--font-sans);
-            line-height: 1.625;
-            letter-spacing: -0.022em;
-            -webkit-font-smoothing: antialiased;
-        }
+ /* Layout Grid & Spacing */
+ .container {
+ width: 100%;
+ max-width: var(--max-width);
+ margin: 0 auto;
+ padding: 0 24px;
+ }
 
-        /* Layout Grid & Spacing */
-        .container {
-            width: 100%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+ /* Header Style (nav-present) */
+ .header-nav {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background-color: rgba(10, 10, 12, 0.85);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ border-bottom: 1px solid var(--border-color);
+ }
 
-        /* Header Style (nav-present) */
-        .header-nav {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background-color: rgba(10, 10, 12, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border-color);
-        }
+ .nav-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 64px;
+ }
 
-        .nav-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 64px;
-        }
+ .logo-link {
+ font-size: 16px;
+ font-weight: 600;
+ color: var(--text-primary);
+ text-decoration: none;
+ letter-spacing: -0.01em;
+ }
 
-        .logo-link {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--text-primary);
-            text-decoration: none;
-            letter-spacing: -0.01em;
-        }
+ .nav-list {
+ display: flex;
+ gap: 32px;
+ list-style: none;
+ }
 
-        .nav-list {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
+ .nav-link {
+ font-size: 13px;
+ color: var(--text-secondary);
+ text-decoration: none;
+ transition: var(--transition);
+ }
 
-        .nav-link {
-            font-size: 13px;
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: var(--transition);
-        }
+ .nav-link:hover, .nav-link.active {
+ color: var(--text-primary);
+ }
 
-        .nav-link:hover, .nav-link.active {
-            color: var(--text-primary);
-        }
+ /* Hero Section */
+ .hero-section {
+ padding: 120px 0 80px 0;
+ border-bottom: 1px solid var(--border-color);
+ }
 
-        /* Hero Section */
-        .hero-section {
-            padding: 120px 0 80px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
+ .hero-meta {
+ font-size: 12px;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--text-muted);
+ margin-bottom: 16px;
+ font-weight: 500;
+ }
 
-        .hero-meta {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
-            margin-bottom: 16px;
-            font-weight: 500;
-        }
+ .hero-title {
+ font-size: 44px;
+ font-weight: 700;
+ line-height: 1.15;
+ letter-spacing: -0.03em;
+ color: var(--text-primary);
+ max-width: 800px;
+ margin-bottom: 24px;
+ }
 
-        .hero-title {
-            font-size: 44px;
-            font-weight: 700;
-            line-height: 1.15;
-            letter-spacing: -0.03em;
-            color: var(--text-primary);
-            max-width: 800px;
-            margin-bottom: 24px;
-        }
+ .hero-desc {
+ font-size: 18px;
+ line-height: 1.5;
+ color: var(--text-secondary);
+ max-width: 720px;
+ font-weight: 400;
+ }
 
-        .hero-desc {
-            font-size: 18px;
-            line-height: 1.5;
-            color: var(--text-secondary);
-            max-width: 720px;
-            font-weight: 400;
-        }
+ /* Editorial Content Section */
+ .content-layout {
+ display: grid;
+ grid-template-columns: 280px 1fr;
+ gap: 64px;
+ padding: 80px 0;
+ }
 
-        /* Editorial Content Section */
-        .content-layout {
-            display: grid;
-            grid-template-columns: 280px 1fr;
-            gap: 64px;
-            padding: 80px 0;
-        }
+ .sidebar-meta {
+ position: sticky;
+ top: 104px;
+ height: fit-content;
+ }
 
-        .sidebar-meta {
-            position: sticky;
-            top: 104px;
-            height: fit-content;
-        }
+ .meta-label {
+ font-size: 11px;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ letter-spacing: 0.05em;
+ margin-bottom: 6px;
+ }
 
-        .meta-label {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            letter-spacing: 0.05em;
-            margin-bottom: 6px;
-        }
+ .meta-value {
+ font-size: 14px;
+ color: var(--text-primary);
+ margin-bottom: 32px;
+ font-weight: 500;
+ }
 
-        .meta-value {
-            font-size: 14px;
-            color: var(--text-primary);
-            margin-bottom: 32px;
-            font-weight: 500;
-        }
+ .article-body h2 {
+ font-size: 26px;
+ font-weight: 600;
+ line-height: 1.25;
+ letter-spacing: -0.02em;
+ margin-bottom: 24px;
+ color: var(--text-primary);
+ }
 
-        .article-body h2 {
-            font-size: 26px;
-            font-weight: 600;
-            line-height: 1.25;
-            letter-spacing: -0.02em;
-            margin-bottom: 24px;
-            color: var(--text-primary);
-        }
+ .article-body p {
+ font-size: 16px;
+ color: var(--text-secondary);
+ margin-bottom: 28px;
+ line-height: 1.65;
+ }
 
-        .article-body p {
-            font-size: 16px;
-            color: var(--text-secondary);
-            margin-bottom: 28px;
-            line-height: 1.65;
-        }
+ /* Data Comparison Grid */
+ .comparison-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 24px;
+ margin: 40px 0;
+ }
 
-        /* Data Comparison Grid */
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-            margin: 40px 0;
-        }
+ .comparison-card {
+ background-color: var(--bg-secondary);
+ border: 1px solid var(--border-color);
+ border-radius: 12px;
+ padding: 32px;
+ transition: var(--transition);
+ }
 
-        .comparison-card {
-            background-color: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 32px;
-            transition: var(--transition);
-        }
+ .comparison-card:hover {
+ border-color: rgba(255, 255, 255, 0.15);
+ }
 
-        .comparison-card:hover {
-            border-color: rgba(255, 255, 255, 0.15);
-        }
+ .card-category {
+ font-size: 12px;
+ color: var(--text-muted);
+ text-transform: uppercase;
+ margin-bottom: 12px;
+ font-weight: 500;
+ }
 
-        .card-category {
-            font-size: 12px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            font-weight: 500;
-        }
+ .card-title {
+ font-size: 20px;
+ font-weight: 600;
+ margin-bottom: 16px;
+ color: var(--text-primary);
+ }
 
-        .card-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: var(--text-primary);
-        }
+ .card-list {
+ list-style: none;
+ }
 
-        .card-list {
-            list-style: none;
-        }
+ .card-list-item {
+ display: flex;
+ justify-content: space-between;
+ font-size: 14px;
+ padding: 10px 0;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+ color: var(--text-secondary);
+ }
 
-        .card-list-item {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-            color: var(--text-secondary);
-        }
+ .card-list-item:last-child {
+ border-bottom: none;
+ }
 
-        .card-list-item:last-child {
-            border-bottom: none;
-        }
+ .card-list-item span:last-child {
+ color: var(--text-primary);
+ font-weight: 500;
+ }
 
-        .card-list-item span:last-child {
-            color: var(--text-primary);
-            font-weight: 500;
-        }
+ /* Table Style */
+ .table-wrapper {
+ width: 100%;
+ overflow-x: auto;
+ margin: 48px 0;
+ border: 1px solid var(--border-color);
+ border-radius: 8px;
+ background-color: var(--bg-secondary);
+ }
 
-        /* Table Style */
-        .table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            margin: 48px 0;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            background-color: var(--bg-secondary);
-        }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ text-align: left;
+ font-size: 14px;
+ }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 14px;
-        }
+ th {
+ background-color: var(--bg-tertiary);
+ color: var(--text-primary);
+ padding: 16px 20px;
+ font-weight: 600;
+ border-bottom: 1px solid var(--border-color);
+ }
 
-        th {
-            background-color: var(--bg-tertiary);
-            color: var(--text-primary);
-            padding: 16px 20px;
-            font-weight: 600;
-            border-bottom: 1px solid var(--border-color);
-        }
+ td {
+ padding: 16px 20px;
+ border-bottom: 1px solid var(--border-color);
+ color: var(--text-secondary);
+ }
 
-        td {
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--border-color);
-            color: var(--text-secondary);
-        }
+ tr:last-child td {
+ border-bottom: none;
+ }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
+ /* Callout Box */
+ .editorial-callout {
+ background-color: var(--bg-tertiary);
+ border-left: 2px solid var(--accent);
+ padding: 24px;
+ margin: 40px 0;
+ border-radius: 0 8px 8px 0;
+ }
 
-        /* Callout Box */
-        .editorial-callout {
-            background-color: var(--bg-tertiary);
-            border-left: 2px solid var(--accent);
-            padding: 24px;
-            margin: 40px 0;
-            border-radius: 0 8px 8px 0;
-        }
+ .callout-title {
+ font-size: 15px;
+ font-weight: 600;
+ color: var(--text-primary);
+ margin-bottom: 8px;
+ }
 
-        .callout-title {
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 8px;
-        }
+ .callout-desc {
+ font-size: 14px;
+ color: var(--text-secondary);
+ line-height: 1.5;
+ }
 
-        .callout-desc {
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.5;
-        }
+ /* FAQ Section */
+ .faq-section {
+ padding: 80px 0;
+ border-top: 1px solid var(--border-color);
+ }
 
-        /* FAQ Section */
-        .faq-section {
-            padding: 80px 0;
-            border-top: 1px solid var(--border-color);
-        }
+ .faq-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 40px;
+ margin-top: 40px;
+ }
 
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            margin-top: 40px;
-        }
+ .faq-item h3 {
+ font-size: 16px;
+ font-weight: 600;
+ color: var(--text-primary);
+ margin-bottom: 12px;
+ }
 
-        .faq-item h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 12px;
-        }
+ .faq-item p {
+ font-size: 14px;
+ color: var(--text-secondary);
+ line-height: 1.6;
+ }
 
-        .faq-item p {
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
+ /* Footer Style */
+ .footer {
+ background-color: var(--bg-secondary);
+ border-top: 1px solid var(--border-color);
+ padding: 60px 0;
+ font-size: 12px;
+ color: var(--text-muted);
+ }
 
-        /* Footer Style */
-        .footer {
-            background-color: var(--bg-secondary);
-            border-top: 1px solid var(--border-color);
-            padding: 60px 0;
-            font-size: 12px;
-            color: var(--text-muted);
-        }
+ .footer-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ }
 
-        .footer-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
+ .footer-info p {
+ margin-bottom: 8px;
+ }
 
-        .footer-info p {
-            margin-bottom: 8px;
-        }
+ .footer-links {
+ display: flex;
+ gap: 24px;
+ list-style: none;
+ }
 
-        .footer-links {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-        }
+ .footer-links a {
+ color: var(--text-muted);
+ text-decoration: none;
+ transition: var(--transition);
+ }
 
-        .footer-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: var(--transition);
-        }
+ .footer-links a:hover {
+ color: var(--text-primary);
+ }
 
-        .footer-links a:hover {
-            color: var(--text-primary);
-        }
+ /* Responsive-768 */
+ @media (max-width: 768px) {
+ .nav-list {
+ gap: 16px;
+ }
 
-        /* Responsive-768 */
-        @media (max-width: 768px) {
-            .nav-list {
-                gap: 16px;
-            }
+ .nav-link {
+ font-size: 12px;
+ }
 
-            .nav-link {
-                font-size: 12px;
-            }
+ .hero-title {
+ font-size: 32px;
+ }
 
-            .hero-title {
-                font-size: 32px;
-            }
+ .hero-desc {
+ font-size: 16px;
+ }
 
-            .hero-desc {
-                font-size: 16px;
-            }
+ .content-layout {
+ grid-template-columns: 1fr;
+ gap: 40px;
+ padding: 40px 0;
+ }
 
-            .content-layout {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                padding: 40px 0;
-            }
+ .sidebar-meta {
+ position: relative;
+ top: 0;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 16px;
+ border-bottom: 1px solid var(--border-color);
+ padding-bottom: 24px;
+ }
 
-            .sidebar-meta {
-                position: relative;
-                top: 0;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 16px;
-                border-bottom: 1px solid var(--border-color);
-                padding-bottom: 24px;
-            }
+ .meta-value {
+ margin-bottom: 0;
+ }
 
-            .meta-value {
-                margin-bottom: 0;
-            }
+ .comparison-grid {
+ grid-template-columns: 1fr;
+ }
 
-            .comparison-grid {
-                grid-template-columns: 1fr;
-            }
+ .faq-grid {
+ grid-template-columns: 1fr;
+ gap: 24px;
+ }
 
-            .faq-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-                gap: 24px;
-            }
-        }
-    </style>
+ .footer-inner {
+ flex-direction: column;
+ gap: 24px;
+ }
+ }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header class="header-nav">
-        <div class="container">
-            <nav class="nav-inner">
-                <a href="https://report.gongdeok-club.xyz/" class="logo-link">SEOUL NIGHT REPORT</a>
-                <ul class="nav-list">
-                    <li><a href="https://report.gongdeok-club.xyz/" class="nav-link">홈</a></li>
-                    <li><a href="#comparison" class="nav-link active">업종별 비교</a></li>
-                    <li><a href="#analysis" class="nav-link">비용 요인</a></li>
-                    <li><a href="#faq" class="nav-link">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+ <!-- Header Navigation -->
+ <header class="header-nav">
+ <div class="container">
+ <nav class="nav-inner">
+ <a href="https://report.gongdeok-club.xyz/" class="logo-link">SEOUL NIGHT REPORT</a>
+ <ul class="nav-list">
+ <li><a href="https://report.gongdeok-club.xyz/" class="nav-link">홈</a></li>
+ <li><a href="#comparison" class="nav-link active">업종별 비교</a></li>
+ <li><a href="#analysis" class="nav-link">비용 요인</a></li>
+ <li><a href="#faq" class="nav-link">FAQ</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-meta">Industry Comparison Report</div>
-            <h1 class="hero-title">서울 주요 야간 경제 업종별 객관적 비용 및 구조 비교 분석</h1>
-            <p class="hero-desc">복잡하게 얽혀 있는 서울 야간 업종의 가격 체계를 투명하게 분류하고, 소비 과정에서 발생할 수 있는 추가 비용 요인을 체계적으로 짚어봅니다.</p>
-        </div>
-    </section>
+ <!-- Hero Section -->
+ <section class="hero-section">
+ <div class="container">
+ <div class="hero-meta">Industry Comparison Report</div>
+ <h1 class="hero-title">서울 주요 야간 경제 업종별 객관적 비용 및 구조 비교 분석</h1>
+ <p class="hero-desc">복잡하게 얽혀 있는 서울 야간 업종의 가격 체계를 투명하게 분류하고, 소비 과정에서 발생할 수 있는 추가 비용 요인을 체계적으로 짚어봅니다.</p>
+ </div>
+ </section>
 
-    <!-- Main Content Layout -->
-    <main class="container">
-        <div class="content-layout">
-            
-            <!-- Sidebar Meta Information (Black Book Concierge Style) -->
-            <aside class="sidebar-meta">
-                <div>
-                    <div class="meta-label">분석 대상 지역</div>
-                    <div class="meta-value">서울 주요 비즈니스 권역</div>
-                </div>
-                <div>
-                    <div class="meta-label">조사 기준</div>
-                    <div class="meta-value">업종별 표준 운영 규약</div>
-                </div>
-                <div>
-                    <div class="meta-label">목적</div>
-                    <div class="meta-value">소비자 예산 예측성 제고</div>
-                </div>
-                <div>
-                    <div class="meta-label">필터링 키워드</div>
-                    <div class="meta-value">유흥 가격 비교, 비용 투명성</div>
-                </div>
-            </aside>
+ <!-- Main Content Layout -->
+ <main class="container">
+ <div class="content-layout">
+ 
+ <!-- Sidebar Meta Information (Black Book Concierge Style) -->
+ <aside class="sidebar-meta">
+ <div>
+ <div class="meta-label">분석 대상 지역</div>
+ <div class="meta-value">서울 주요 비즈니스 권역</div>
+ </div>
+ <div>
+ <div class="meta-label">조사 기준</div>
+ <div class="meta-value">업종별 표준 운영 규약</div>
+ </div>
+ <div>
+ <div class="meta-label">목적</div>
+ <div class="meta-value">소비자 예산 예측성 제고</div>
+ </div>
+ <div>
+ <div class="meta-label">필터링 키워드</div>
+ <div class="meta-value">유흥 가격 비교, 비용 투명성</div>
+ </div>
+ </aside>
 
-            <!-- Article Body -->
-            <article class="article-body">
-                
-                <section id="comparison">
-                    <h2>1. 주요 업종별 비용 산정 방식의 차이</h2>
-                    <p>서울의 야간 비즈니스 및 엔터테인먼트 시장은 제공되는 서비스의 성격과 공간의 형태에 따라 비용을 산정하는 메커니즘이 확연히 다릅니다. 고정식 세트 가격제를 채택하는 곳이 있는 반면, 시간 단위로 정산하는 시스템도 존재하므로 사전 구조 파악이 필수적입니다.</p>
-                    
-                    <!-- Comparison Card Grid -->
-                    <div class="comparison-grid">
-                        <div class="comparison-card">
-                            <div class="card-category">Format A</div>
-                            <div class="card-title">정액형 세트 시스템</div>
-                            <ul class="card-list">
-                                <li class="card-list-item"><span>기본 제공</span> <span>기본 주류 + 기본 안주</span></li>
-                                <li class="card-list-item"><span>시간 제한</span> <span>제한 없음 (또는 룸 시간제)</span></li>
-                                <li class="card-list-item"><span>주요 특징</span> <span>초기 진입 비용의 예측 가능성 높음</span></li>
-                            </ul>
-                        </div>
-                        <div class="comparison-card">
-                            <div class="card-category">Format B</div>
-                            <div class="card-title">시간 기반 정산 시스템</div>
-                            <ul class="card-list">
-                                <li class="card-list-item"><span>기본 제공</span> <span>시간 단위 테이블 이용 권한</span></li>
-                                <li class="card-list-item"><span>시간 제한</span> <span>60분 또는 90분 기준 연장</span></li>
-                                <li class="card-list-item"><span>주요 특징</span> <span>체류 시간에 비례하여 누적 증가</span></li>
-                            </ul>
-                        </div>
-                    </div>
+ <!-- Article Body -->
+ <article class="article-body">
+ 
+ <section id="comparison">
+ <h2>1. 주요 업종별 비용 산정 방식의 차이</h2>
+ <p>서울의 야간 비즈니스 및 엔터테인먼트 시장은 제공되는 서비스의 성격과 공간의 형태에 따라 비용을 산정하는 메커니즘이 확연히 다릅니다. 고정식 세트 가격제를 채택하는 곳이 있는 반면, 시간 단위로 정산하는 시스템도 존재하므로 사전 구조 파악이 필수적입니다.</p>
+ 
+ <!-- Comparison Card Grid -->
+ <div class="comparison-grid">
+ <div class="comparison-card">
+ <div class="card-category">Format A</div>
+ <div class="card-title">정액형 세트 시스템</div>
+ <ul class="card-list">
+ <li class="card-list-item"><span>기본 제공</span> <span>기본 주류 + 기본 안주</span></li>
+ <li class="card-list-item"><span>시간 제한</span> <span>제한 없음 (또는 룸 시간제)</span></li>
+ <li class="card-list-item"><span>주요 특징</span> <span>초기 진입 비용의 예측 가능성 높음</span></li>
+ </ul>
+ </div>
+ <div class="comparison-card">
+ <div class="card-category">Format B</div>
+ <div class="card-title">시간 기반 정산 시스템</div>
+ <ul class="card-list">
+ <li class="card-list-item"><span>기본 제공</span> <span>시간 단위 테이블 이용 권한</span></li>
+ <li class="card-list-item"><span>시간 제한</span> <span>60분 또는 90분 기준 연장</span></li>
+ <li class="card-list-item"><span>주요 특징</span> <span>체류 시간에 비례하여 누적 증가</span></li>
+ </ul>
+ </div>
+ </div>
 
-                    <p>위와 같이 정액형과 시간 기반 시스템은 예산 수립 단계에서부터 다른 접근을 요구합니다. 특히 비즈니스 목적으로 방문 시 시간 초과에 따른 누적 비용이 예산을 초과하는 원인이 되기도 합니다.</p>
-                </section>
+ <p>위와 같이 정액형과 시간 기반 시스템은 예산 수립 단계에서부터 다른 접근을 요구합니다. 특히 비즈니스 목적으로 방문 시 시간 초과에 따른 누적 비용이 예산을 초과하는 원인이 되기도 합니다.</p>
+ </section>
 
-                <section id="analysis">
-                    <h2>2. 객관적인 세부 비용 항목 비교</h2>
-                    <p>각 업종이 취하고 있는 세부 정산 구조를 표 형식으로 재정리하여 직관적인 비교가 가능하도록 구성했습니다. 아래 데이터는 시장 평균적인 구조를 나타냅니다.</p>
+ <section id="analysis">
+ <h2>2. 객관적인 세부 비용 항목 비교</h2>
+ <p>각 업종이 취하고 있는 세부 정산 구조를 표 형식으로 재정리하여 직관적인 비교가 가능하도록 구성했습니다. 아래 데이터는 시장 평균적인 구조를 나타냅니다.</p>
 
-                    <!-- Responsive Data Table -->
-                    <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>업종 유형</th>
-                                    <th>기본 주류 단가 구조</th>
-                                    <th>시간당 고정 비용</th>
-                                    <th>봉사료 정산 방식</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>가라오케</strong></td>
-                                    <td>세트 구성 위주 (비교적 정찰제)</td>
-                                    <td>룸 요금 별도 부과 가능성 낮음</td>
-                                    <td>주문량 비례 및 고정 봉사료</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>셔츠룸</strong></td>
-                                    <td>시간 단위 패키지 정산</td>
-                                    <td>정해진 타임제 운영 (연장 수수료 발생)</td>
-                                    <td>시간당 정산 시스템 적용</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>비즈니스 클럽</strong></td>
-                                    <td>주류 등급별 차등 적용</td>
-                                    <td>공간 대여 비용 및 기본 세팅비 구성</td>
-                                    <td>종합 봉사료 일괄 합산 정산</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+ <!-- Responsive Data Table -->
+ <div class="table-wrapper">
+ <table>
+ <thead>
+ <tr>
+ <th>업종 유형</th>
+ <th>기본 주류 단가 구조</th>
+ <th>시간당 고정 비용</th>
+ <th>봉사료 정산 방식</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>가라오케</strong></td>
+ <td>세트 구성 위주 (비교적 정찰제)</td>
+ <td>룸 요금 별도 부과 가능성 낮음</td>
+ <td>주문량 비례 및 고정 봉사료</td>
+ </tr>
+ <tr>
+ <td><strong>셔츠룸</strong></td>
+ <td>시간 단위 패키지 정산</td>
+ <td>정해진 타임제 운영 (연장 수수료 발생)</td>
+ <td>시간당 정산 시스템 적용</td>
+ </tr>
+ <tr>
+ <td><strong>비즈니스 클럽</strong></td>
+ <td>주류 등급별 차등 적용</td>
+ <td>공간 대여 비용 및 기본 세팅비 구성</td>
+ <td>종합 봉사료 일괄 합산 정산</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
 
-                    <div class="editorial-callout">
-                        <div class="callout-title">전문가 제언: 유흥 가격 비교 시 주의점</div>
-                        <div class="callout-desc">일부 투명하지 않은 경로를 통해 안내받는 견적의 경우, 세금(VAT)이나 기본 룸 사용료, 웨이터 팁 등이 누락되어 최종 청구서에서 마찰을 빚는 경우가 잦습니다. 반드시 사전 문의 시 '최종 합산 금액' 기준을 확인해야 합니다.</div>
-                    </div>
-                </section>
+ <div class="editorial-callout">
+ <div class="callout-title">전문가 제언: 유흥 가격 비교 시 주의점</div>
+ <div class="callout-desc">일부 투명하지 않은 경로를 통해 안내받는 견적의 경우, 세금(VAT)이나 기본 룸 사용료, 웨이터 팁 등이 누락되어 최종 청구서에서 마찰을 빚는 경우가 잦습니다. 반드시 사전 문의 시 '최종 합산 금액' 기준을 확인해야 합니다.</div>
+ </div>
+ </section>
 
-                <section>
-                    <h2>3. 비용 결정의 핵심 변수 3가지</h2>
-                    <p>동일한 업종이라 할지라도 최종 정산 금액이 달라지는 데에는 명확한 유통 구조적 요인이 존재합니다.</p>
-                    
-                    <p><strong>첫째, 유통 단계의 복잡성입니다.</strong> 영업 담당자나 에이전시를 거치는지, 혹은 업장에 직접 예약하는지에 따라 중간 수수료 유무가 가격에 반영됩니다. 직접 운영되는 채널을 이용할 때 비교적 가격 거품이 걷히는 경향을 보입니다.</p>
-                    
-                    <p><strong>둘째, 지역적 프리미엄입니다.</strong> 서울 내에서도 강남, 서초 지역과 강북, 신촌 등 대학가 주변 혹은 배후 업무 지구의 임대료 차이가 고스란히 주류 및 서비스 테이블 단가에 전가됩니다.</p>
-                    
-                    <p><strong>셋째, 이용 시간대(Peak-time) 여부입니다.</strong> 주간 혹은 이른 저녁 시간대 프로모션을 운영하는 업장의 경우, 야간 황금 시간대에 비해 20~30%가량 절감된 고정 단가를 제안하기도 하므로 시간적 대안을 고려하는 것도 합리적인 방안입니다.</p>
-                </section>
+ <section>
+ <h2>3. 비용 결정의 핵심 변수 3가지</h2>
+ <p>동일한 업종이라 할지라도 최종 정산 금액이 달라지는 데에는 명확한 유통 구조적 요인이 존재합니다.</p>
+ 
+ <p><strong>첫째, 유통 단계의 복잡성입니다.</strong> 영업 담당자나 에이전시를 거치는지, 혹은 업장에 직접 예약하는지에 따라 중간 수수료 유무가 가격에 반영됩니다. 직접 운영되는 채널을 이용할 때 비교적 가격 거품이 걷히는 경향을 보입니다.</p>
+ 
+ <p><strong>둘째, 지역적 프리미엄입니다.</strong> 서울 내에서도 강남, 서초 지역과 강북, 신촌 등 대학가 주변 혹은 배후 업무 지구의 임대료 차이가 고스란히 주류 및 서비스 테이블 단가에 전가됩니다.</p>
+ 
+ <p><strong>셋째, 이용 시간대(Peak-time) 여부입니다.</strong> 주간 혹은 이른 저녁 시간대 프로모션을 운영하는 업장의 경우, 야간 황금 시간대에 비해 20~30%가량 절감된 고정 단가를 제안하기도 하므로 시간적 대안을 고려하는 것도 합리적인 방안입니다.</p>
+ </section>
 
-            </article>
-        </div>
-    </main>
+ </article>
+ </div>
+ </main>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <h2>자주 묻는 질문 (FAQ)</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>Q. 명시된 가격표 외에 추가금이 발생하는 주된 이유는 무엇인가요?</h3>
-                    <p>A. 주로 기본 이용 시간을 초과하여 연장하는 경우 발생하는 시간 연장료(T/C), 특정 고급 브랜드 주류로의 임의 변경, 혹은 봉사료 정산 방식의 오해에서 기인합니다. 입장 전에 반드시 시간 제한 규정을 재확인하십시오.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 예약 경로에 따른 실질적인 가격 차이가 존재하나요?</h3>
-                    <p>A. 그렇습니다. 직영 웹사이트나 공식 소통 채널을 통하지 않고 다중 중개 플랫폼을 이용할 경우 수수료가 청구서에 가산될 수 있어, 직영 접수처를 통한 직접 문의가 상대적으로 투명합니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 가라오케와 비즈니스클럽의 단가 차이가 나는 원인은 무엇인가요?</h3>
-                    <p>A. 제공되는 보조 서비스의 범위와 상주 직원의 관리 방식 차이에서 비롯됩니다. 가라오케는 공간 대여와 기본 음향 인프라 제공에 초점이 맞추어져 있어 상대적으로 진입 장벽이 낮습니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 부가세(VAT)는 항상 별도로 계산해야 하나요?</h3>
-                    <p>A. 국내 세법상 최종소비자 가격 표시제가 원칙이나, 야간 업종의 특성상 부가세 및 봉사료가 별도로 표기되어 청구되는 경우가 있으므로 합산 여부를 결제 전에 재차 명확히 규명하는 것이 좋습니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+ <!-- FAQ Section -->
+ <section id="faq" class="faq-section">
+ <div class="container">
+ <h2>자주 묻는 질문 (FAQ)</h2>
+ <div class="faq-grid">
+ <div class="faq-item">
+ <h3>Q. 명시된 가격표 외에 추가금이 발생하는 주된 이유는 무엇인가요?</h3>
+ <p>A. 주로 기본 이용 시간을 초과하여 연장하는 경우 발생하는 시간 연장료(T/C), 특정 고급 브랜드 주류로의 임의 변경, 혹은 봉사료 정산 방식의 오해에서 기인합니다. 입장 전에 반드시 시간 제한 규정을 재확인하십시오.</p>
+ </div>
+ <div class="faq-item">
+ <h3>Q. 예약 경로에 따른 실질적인 가격 차이가 존재하나요?</h3>
+ <p>A. 그렇습니다. 직영 웹사이트나 공식 소통 채널을 통하지 않고 다중 중개 플랫폼을 이용할 경우 수수료가 청구서에 가산될 수 있어, 직영 접수처를 통한 직접 문의가 상대적으로 투명합니다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>Q. 가라오케와 비즈니스클럽의 단가 차이가 나는 원인은 무엇인가요?</h3>
+ <p>A. 제공되는 보조 서비스의 범위와 상주 직원의 관리 방식 차이에서 비롯됩니다. 가라오케는 공간 대여와 기본 음향 인프라 제공에 초점이 맞추어져 있어 상대적으로 진입 장벽이 낮습니다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>Q. 부가세(VAT)는 항상 별도로 계산해야 하나요?</h3>
+ <p>A. 국내 세법상 최종소비자 가격 표시제가 원칙이나, 야간 업종의 특성상 부가세 및 봉사료가 별도로 표기되어 청구되는 경우가 있으므로 합산 여부를 결제 전에 재차 명확히 규명하는 것이 좋습니다.</p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <div class="footer-info">
-                <p><strong>SEOUL NIGHT REPORT</strong> — 객관적 야간 경제 정보 플랫폼</p>
-                <p>본 사이트에서 제공하는 정보는 서울 지역 업종별 표준 운영 방식을 기반으로 작성된 분석 리포트입니다.</p>
-                <p>© 2024 Seoul Night Report. All Rights Reserved.</p>
-            </div>
-            <ul class="footer-links">
-                <li><a href="https://report.gongdeok-club.xyz/">개인정보처리방침</a></li>
-                <li><a href="https://report.gongdeok-club.xyz/">이용약관</a></li>
-            </ul>
-        </div>
-    </footer>
+ <!-- Footer -->
+ <footer class="footer">
+ <div class="container footer-inner">
+ <div class="footer-info">
+ <p><strong>SEOUL NIGHT REPORT</strong> — 객관적 야간 경제 정보 플랫폼</p>
+ <p>본 사이트에서 제공하는 정보는 서울 지역 업종별 표준 운영 방식을 기반으로 작성된 분석 리포트입니다.</p>
+ <p>© 2024 Seoul Night Report. All Rights Reserved.</p>
+ </div>
+ <ul class="footer-links">
+ <li><a href="https://report.gongdeok-club.xyz/">개인정보처리방침</a></li>
+ <li><a href="https://report.gongdeok-club.xyz/">이용약관</a></li>
+ </ul>
+ </div>
+ </footer>
 
 </body>
 </html>

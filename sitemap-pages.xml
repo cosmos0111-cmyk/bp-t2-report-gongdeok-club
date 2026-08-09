@@ -36,7 +36,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://report.gongdeok-club.xyz/posts/field_note-004-w6nqzl.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://report.gongdeok-club.xyz/posts/guide-001-ix7y74.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://report.gongdeok-club.xyz/posts/guide-003-10bpiy3.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -56,6 +66,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://report.gongdeok-club.xyz/posts/major_compare-005-je27gq.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://report.gongdeok-club.xyz/posts/myth-002-1kb4ggy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://report.gongdeok-club.xyz/posts/myth-002-1lasnj2.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -67,6 +87,11 @@
   </url>
   <url>
     <loc>https://report.gongdeok-club.xyz/posts/qa-001-1psj08t.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://report.gongdeok-club.xyz/posts/qa-001-nzgd5m.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
