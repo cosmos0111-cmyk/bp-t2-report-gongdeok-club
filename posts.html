@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · t2-report-gongdeok-club</title>
+  <meta name="description" content="t2-report-gongdeok-club에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://report.gongdeok-club.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS Reset & Variables */
+ :root {
+ --bg-primary: #0a0a0c;
+ --bg-secondary: #16161a;
+ --bg-tertiary: #202024;
+ --accent-color: #e5e5ea;
+ --text-primary: #f5f5f7;
+ --text-secondary: #8e8e93;
+ --text-muted: #636366;
+ --border-color: #2c2c2e;
+ --max-width: 1100px;
+ --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--bg-primary);
+ color: var(--text-primary);
+ font-family: var(--font-family);
+ line-height: 1.625;
+ -webkit-font-smoothing: antialiased;
+ letter-spacing: -0.022em;
+ }
+
+ /* Layout Grid & Spacing */
+ .q-grid-ev29 {
+ max-width: var(--max-width);
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+
+ /* Header Style */
+ .n-item-v9jk {
+ border-bottom: 1px solid var(--border-color);
+ background-color: rgba(10, 10, 12, 0.8);
+ backdrop-filter: blur(20px);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+
+ .n-item-v9jk-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 64px;
+ }
+
+ .t-item-8ro1 {
+ font-size: 1.1rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ color: var(--text-primary);
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+
+ .t-item-8ro1::before {
+ content: '';
+ display: inline-block;
+ width: 8px;
+ height: 8px;
+ background-color: var(--accent-color);
+ border-radius: 50%;
+ }
+
+ .r-item-7x5k-list {
+ display: flex;
+ list-style: none;
+ gap: 32px;
+ }
+
+ .r-item-7x5k-link {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.2s ease;
+ }
+
+ .r-item-7x5k-link:hover,
+ .r-item-7x5k-link.active {
+ color: var(--text-primary);
+ }
+
+ /* Hero Section */
+ .hero-section {
+ padding: 120px 0 80px 0;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .hero-badge {
+ display: inline-block;
+ padding: 6px 12px;
+ background-color: var(--bg-secondary);
+ border: 1px solid var(--border-color);
+ border-radius: 20px;
+ font-size: 0.75rem;
+ font-weight: 600;
+ color: var(--text-secondary);
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ margin-bottom: 24px;
+ }
+
+ .hero-title {
+ font-size: 3rem;
+ font-weight: 700;
+ line-height: 1.15;
+ letter-spacing: -0.04em;
+ margin-bottom: 24px;
+ max-width: 800px;
+ }
+
+ .hero-desc {
+ font-size: 1.25rem;
+ color: var(--text-secondary);
+ max-width: 700px;
+ line-height: 1.5;
+ }
+
+ /* Grid Pattern */
+ .grid-three-col {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 32px;
+ padding: 80px 0;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .pillar-card {
+ background-color: var(--bg-secondary);
+ border: 1px solid var(--border-color);
+ padding: 40px 32px;
+ border-radius: 12px;
+ transition: transform 0.2s ease, border-color 0.2s ease;
+ }
+
+ .pillar-card:hover {
+ border-color: var(--text-muted);
+ }
+
+ .pillar-num {
+ font-size: 0.85rem;
+ color: var(--text-muted);
+ font-family: monospace;
+ margin-bottom: 24px;
+ display: block;
+ }
+
+ .pillar-title {
+ font-size: 1.35rem;
+ font-weight: 600;
+ margin-bottom: 16px;
+ letter-spacing: -0.02em;
+ }
+
+ .pillar-text {
+ font-size: 0.95rem;
+ color: var(--text-secondary);
+ line-height: 1.6;
+ }
+
+ /* Editorial Content Section */
+ .editorial-section {
+ padding: 80px 0;
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ gap: 64px;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .editorial-sidebar h2 {
+ font-size: 1.75rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ position: sticky;
+ top: 100px;
+ }
+
+ .editorial-body p {
+ font-size: 1.05rem;
+ color: var(--text-secondary);
+ margin-bottom: 24px;
+ line-height: 1.7;
+ }
+
+ .editorial-body p strong {
+ color: var(--text-primary);
+ }
+
+ /* Highlight box */
+ .callout-box {
+ background-color: var(--bg-tertiary);
+ border-left: 4px solid var(--accent-color);
+ padding: 24px;
+ border-radius: 0 8px 8px 0;
+ margin: 32px 0;
+ }
+
+ .callout-box p {
+ margin-bottom: 0;
+ font-size: 0.95rem;
+ color: var(--text-primary);
+ }
+
+ /* FAQ Section */
+ .faq-section {
+ padding: 80px 0;
+ }
+
+ .section-title {
+ font-size: 2rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ margin-bottom: 48px;
+ text-align: center;
+ }
+
+ .faq-list {
+ max-width: 800px;
+ margin: 0 auto;
+ }
+
+ .faq-item {
+ border-bottom: 1px solid var(--border-color);
+ padding: 24px 0;
+ }
+
+ .faq-question {
+ font-size: 1.1rem;
+ font-weight: 600;
+ margin-bottom: 12px;
+ color: var(--text-primary);
+ }
+
+ .faq-answer {
+ font-size: 0.95rem;
+ color: var(--text-secondary);
+ line-height: 1.6;
+ }
+
+ /* Footer */
+ .footer {
+ border-top: 1px solid var(--border-color);
+ padding: 48px 0;
+ background-color: var(--bg-primary);
+ }
+
+ .footer-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: var(--text-muted);
+ font-size: 0.85rem;
+ }
+
+ .footer-links {
+ display: flex;
+ gap: 24px;
+ }
+
+ .footer-links a {
+ color: var(--text-muted);
+ text-decoration: none;
+ }
+
+ .footer-links a:hover {
+ color: var(--text-secondary);
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+ .n-item-v9jk-inner {
+ flex-direction: column;
+ height: auto;
+ padding: 16px 0;
+ gap: 16px;
+ }
+
+ .r-item-7x5k-list {
+ gap: 20px;
+ }
+
+ .hero-title {
+ font-size: 2.25rem;
+ }
+
+ .grid-three-col {
+ grid-template-columns: 1fr;
+ gap: 24px;
+ }
+
+ .editorial-section {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+
+ .editorial-sidebar h2 {
+ position: static;
+ }
+
+ .footer-inner {
+ flex-direction: column;
+ gap: 16px;
+ text-align: center;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 · t2-report-gongdeok-club">
+  <meta property="og:description" content="t2-report-gongdeok-club에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://report.gongdeok-club.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="n-item-v9jk">
+ <div class="q-grid-ev29 n-item-v9jk-inner">
+ <a href="/" class="t-item-8ro1">서울 야간 경제 분석 리포트</a>
+ <nav>
+ <ul class="r-item-7x5k-list">
+ <li><a href="/" class="r-item-7x5k-link">홈</a></li>
+ <li><a href="/pricing-analysis.html" class="r-item-7x5k-link">가격 구조 분석</a></li>
+ <li><a href="/market-comparison.html" class="r-item-7x5k-link">업종별 비교</a></li>
+ <li><a href="/about.html" class="r-item-7x5k-link active">소개</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 15개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-1tw3853.html">유흥 가격 비교 현장에서 확인한 선택 기준과 주의점</a>
+        <p class="post-item__summary">안녕하세요! 어떤 작업이나 지시사항을 도와드릴까요? 원하시는 내용을 편하게 말씀해 주세요.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-004-nkg4ss.html">형님의 현장 수첩: 홍대 업소 메뉴 원가 해부 썰, 사장 몰래 본 진짜 생존 방정식</a>
+        <p class="post-item__summary">2023년 내가 가장 자주 간 홍대 단골집 다섯 곳 중 네 곳이 문을 닫았다. 흔한 말처럼 임대료나 불경기를 탓하기엔, 홀로 버틴 한 곳의 운영 방식이 너무 달랐다. 그래서 나는 아직도 가게마다 포</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-004-w6nqzl.html">룸 좀 다녀본 놈들은 절대 안 속는, 술값 뒤에 숨겨진 그들만의 산수</a>
+        <p class="post-item__summary">테이블 위에 놓인 30만 원짜리 세트 메뉴를 보며 다들 '비싸다'고만 생각하지, 정작 그 안의 마진 구조가 어떻게 쪼개지는지는 궁금해하지 않더군요. 제가 늘 가는 단골집 사장이 자리를 비운 사이, </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-001-ix7y74.html">정보 블로그 해결 방법 총정리</a>
+        <p class="post-item__summary">서울과 같은 대도시에서는 다양한 유흥 관련 정보가 빠르게 변화하기 때문에 정확한 정보를 선별하는 것이 매우 중요합니다. 많은 이용자가 유흥 가격 비교 정보를 찾기 위해 정보 블로그를 방문하지만 올바</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-10bpiy3.html">월 3천 매출의 늪, 니들이 환장하는 룸 비즈니스 원가 장부의 민낯</a>
+        <p class="post-item__summary">룸 문짝 아래에 붙이는 3000원짜리 차음용 고무 패킹 두께가 5mm냐 10mm냐에 따라 그달 에어컨 가스 충전 비용이 20%씩 차이 난다는 사실을 아는 업주는 거의 없습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-1a76p23.html">유흥 가격 비교: 리들리 스콧이 유니콘 꿈 하나 살려고 3개 장면 도려낸 진짜 내막</a>
+        <p class="post-item__summary">릭 데커드의 피아노 위 유니콘, 오른쪽 귀에 본드 자국이 보였다. 82년 오리지널 프린트에서 그 본드 자국은 1초 남짓 지나가는 쇼트였다. 편집 테이블에서 처음엔 내가 영화를 잘못 본 줄 알았다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-003-ur7r8m.html">서울의 밤 풍경이 완전히 망가졌다</a>
+        <p class="post-item__summary">요즘 강남이나 종로 일대 돌아가는 꼴을 보면 혀를 차게 된다. 다들 어디서 숏폼 영상 몇 개 보고는 그게 정석인 줄 알지. 예전에는 룸의 분위기와 서비스의 질을 나누는 나름의 규칙이라는 게 존재했는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-005-1v6c2lc.html">느낌 아니까? 유흥 가격 비교는 결국 인솔 프린트 해석 싸움이다</a>
+        <p class="post-item__summary">사소해 보이지만 중요한 디테일 하나로 시작할게. 2023년에 재입고된 아식스 젤 카야노 14 OG 아이보리. 인솔 로고 프린팅이 1차 발매분이랑 위치랑 코팅 질감이 살짝 달라졌다는 거, 너는 캐치했</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-005-je27gq.html">권리금 2억의 판타지와 룸 비즈니스의 민낯, 정말 그 돈 주고 들어간다고?</a>
+        <p class="post-item__summary">권리금 2억 원짜리 대박 가게의 장부를 그대로 믿고 계약서에 도장을 찍으시겠습니까, 아니면 숨겨진 고정비 폭탄을 먼저 찾으시겠습니까?</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-1kb4ggy.html">권리금 2억의 판타지, 그들이 숨겨둔 룸 단위 원가의 민낯과 유흥 가격 비교의 허상</a>
+        <p class="post-item__summary">2023년 11월 14일 밤 11시 45분, 마포구의 한 이면도로 지하 1층에서 수거된 쓰레기봉투 옆에는 노란색 수첩 하나가 굴러다니고 있었습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-1lasnj2.html">비너스 앞에서 무너지는 밸런스, 그리고 가격 비교의 함정</a>
+        <p class="post-item__summary">2인 테라포밍 마스에서 비너스 확장을 쓰는데, 왜 특정 카드 한 장이 게임을 접수하는 기분이 들지? 표면적으론 선택지가 늘어 좋은 거 같지만, 실제로는 벨런스가 심각하게 기울어 있거든. 공식 FAQ</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-005-1nkjwyl.html">유흥 가격 비교에 대한 통념과 실제 차이를 검토했다</a>
+        <p class="post-item__summary">서울 지역에서 유흥 관련 정보를 탐색할 때 수많은 소비자가 다양한 매체를 통해 제시되는 금액표를 그대로 신뢰하는 경향이 있습니다. 보통 화면에 명시된 숫자가 최종 지출 금액과 완벽히 일치할 것이라고</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1psj08t.html">유흥 가격 비교 관련 질문을 상황별로 정리해봤다</a>
+        <p class="post-item__summary">[title: 유니콘 꿈의 가격표 – 블레이드 러너 편집실에서 잘린 3장면과 그 숨은 이유]</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-nzgd5m.html">강남 룸 테이블에서 계산기 두드리는 나를 사장님은 왜 째려봤을까</a>
+        <p class="post-item__summary">지난주 목요일 밤 11시 45분, 신사동의 한 스탠다드급 룸 서비스 업소 3번 방 소파에 깊숙이 묻혀 앉아 있었습니다. 사장님은 내가 자기 가게의 최고 단골이자 든든한 지원군인 줄 알겠지만, 사실 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-004-103g73a.html">유흥 가격 비교 관련 질문을 상황별로 정리해봤다</a>
+        <p class="post-item__summary">서울 지역에서 유흥 관련 정보를 검색할 때 가장 궁금해하는 요소는 단연 가격 책정 방식과 비교 기준입니다. 많은 이용자가 지역이나 업종에 따라 금액 차이가 발생하는 이유를 파악하고자 합니다. 정보 </p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
